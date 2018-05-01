@@ -1,3 +1,5 @@
-<p>
-  navigation works!
-</p>
+<nav fxLayout="row" fxLayoutGap="1em">
+ <div *ngFor="let navlink of navigationLinks">
+   <a [routerLink]="navlink.path" >{{ navlink.name }}</a>
+ </div>
+</nav>
