@@ -1,10 +1,10 @@
 
 export const navigationLinks: NaivgationLink[] = [
     { name: 'Über', path: 'about' },
-    { name: 'Mentoring', path: 'mentoring'},
     { name: 'Workshops', path: 'workshops'},
-    { name: 'Visions-Abend', path: 'vision'},
+    { name: 'Mentoring', path: 'mentoring'},
     { name: 'Coaching', path: 'coaching' },
+    { name: 'Visions-Abend', path: 'vision'},
     { name: 'Kontakt', path: 'contact'}
 ];
 

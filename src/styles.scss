@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700');
+@import 'variables';
+
 
 * {
     font-family: 'Montserrat', sans-serif;
+
+}
+
+html {
+    font-size: $font-size;
 }

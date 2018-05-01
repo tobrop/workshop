@@ -1,5 +1,5 @@
-<nav fxLayout="row" fxLayoutGap="1em">
+<nav fxLayout fxLayoutGap="2.5em">
  <div *ngFor="let navlink of navigationLinks">
-   <a [routerLink]="navlink.path" >{{ navlink.name }}</a>
+   <a class="main-link" [routerLink]="navlink.path" >{{ navlink.name }}</a>
  </div>
 </nav>

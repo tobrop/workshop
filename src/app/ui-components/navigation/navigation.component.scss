@@ -1,0 +1,12 @@
+@import '../../../variables';
+
+a.main-link {
+    color: $color-darkgrey;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+a:hover {
+    color: $color-black;
+}
