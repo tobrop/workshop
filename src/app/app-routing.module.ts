@@ -12,7 +12,7 @@ const appRoutes: Routes = [
   { path: navigationLinks[3].path, component: AppComponent},
   { path: navigationLinks[4].path, component: AppComponent},
   { path: navigationLinks[5].path, component: AppComponent},
-  { path: '**', component: HomeComponent}
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
