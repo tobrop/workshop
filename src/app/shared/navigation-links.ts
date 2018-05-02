@@ -5,6 +5,7 @@ export const navigationLinks: NaivgationLink[] = [
     { name: 'Mentoring', path: 'mentoring'},
     { name: 'Coaching', path: 'coaching' },
     { name: 'Visions-Abend', path: 'vision'},
+    { name: 'Bücher', path: 'books'},
     { name: 'Kontakt', path: 'contact'}
 ];
 

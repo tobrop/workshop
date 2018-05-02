@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationLinks, NaivgationLink } from './navigation-links';
+import { navigationLinks, NaivgationLink } from '../../shared/navigation-links';
 
 @Component({
   selector: 'tor-navigation',

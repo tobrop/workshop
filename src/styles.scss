@@ -8,6 +8,17 @@
 
 }
 
+p {
+    color: $color-darkgrey
+}
+
+h2 {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
 html {
     font-size: $font-size;
 }
+

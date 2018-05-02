@@ -2,7 +2,7 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { navigationLinks } from './ui-components/navigation/navigation-links';
+import { navigationLinks } from './shared/navigation-links';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -12,6 +12,7 @@ const appRoutes: Routes = [
   { path: navigationLinks[3].path, component: AppComponent},
   { path: navigationLinks[4].path, component: AppComponent},
   { path: navigationLinks[5].path, component: AppComponent},
+  { path: navigationLinks[6].path, component: AppComponent},
   { path: '**', component: HomeComponent }
 ];
 
