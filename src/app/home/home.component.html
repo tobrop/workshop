@@ -1,12 +1,14 @@
 <section fxLayout="column" fxLayoutGap="2em">
     <section style="background-color: lightgrey; height: 20em;"></section>
-    <section fxLayout="row" fxLayoutGap="2em" fxLayoutAlign="center center">
-        <tor-i-offer-tile fxFlex="30%"></tor-i-offer-tile>
-        <tor-i-offer-tile fxFlex="30%"></tor-i-offer-tile>
-        <tor-i-offer-tile fxFlex="30%"></tor-i-offer-tile>
+    <section fxLayout="row" fxLayoutGap="0.5em" fxLayoutAlign="center center">
+        <tor-i-offer-tile 
+            fxFlex="32%" 
+            *ngFor="let short of offersShortDescription"
+            [offerShortDescription]="short">
+        </tor-i-offer-tile>
     </section>
     <section>
-        ABOUT ME SHORT
+       <tor-about-short></tor-about-short>
     </section>
     <section>
         Upcomming + TimeTable
