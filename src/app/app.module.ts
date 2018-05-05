@@ -1,3 +1,11 @@
+import { AboutModule } from './about/about.module';
+import { VisionModule } from './vision/vision.module';
+import { BooksModule } from './books/books.module';
+import { OnlineCoursesModule } from './online-courses/online-courses.module';
+import { MentoringModule } from './mentoring/mentoring.module';
+import { CoachingModule } from './coaching/coaching.module';
+import { WorkshopsModule } from './workshops/workshops.module';
+import { ContactModule } from './contact/contact.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UiComponentsModule } from './ui-components/ui-components.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,7 +31,15 @@ import { TimeTableComponent } from './home/time-table/time-table.component';
     BrowserModule,
     UiComponentsModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AboutModule,
+    ContactModule,
+    WorkshopsModule,
+    CoachingModule,
+    MentoringModule,
+    OnlineCoursesModule,
+    BooksModule,
+    VisionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
