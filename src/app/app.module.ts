@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { IOfferTileComponent } from './home/i-offer-tile/i-offer-tile.component';
 import { AboutShortComponent } from './home/about-short/about-short.component';
+import { TimeTableComponent } from './home/time-table/time-table.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AboutShortComponent } from './home/about-short/about-short.component';
     AppComponent,
     HomeComponent,
     IOfferTileComponent,
-    AboutShortComponent
+    AboutShortComponent,
+    TimeTableComponent
   ],
   imports: [
     BrowserModule,

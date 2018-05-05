@@ -14,6 +14,9 @@ export class ButtonComponent implements OnInit {
   @Input()
   path: string;
 
+  @Input()
+  style = 'fill';
+
   constructor(private router: Router) { }
 
   ngOnInit() {

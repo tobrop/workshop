@@ -9,14 +9,18 @@
 }
 
 p {
-    color: $color-darkgrey
+    color: $color-darkgrey;
+    line-height: 1.6em;
+    letter-spacing: 0.02em;
+
 }
 
-h2 {
+h1, h2, h3, h4 {
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     margin-bottom: 0;
 }
+
 
 html {
     font-size: $font-size;

@@ -13,6 +13,8 @@ const appRoutes: Routes = [
   { path: navigationLinks[4].path, component: AppComponent},
   { path: navigationLinks[5].path, component: AppComponent},
   { path: navigationLinks[6].path, component: AppComponent},
+  { path: navigationLinks[7].path, component: AppComponent},
+
   { path: '**', component: HomeComponent }
 ];
 

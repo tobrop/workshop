@@ -27,8 +27,8 @@ export const myOffersShort: OfferShortDescription[] = [
         path: 'mentoring',
     },
     {
-        heading: 'Entdecke Perspektiven',
-        subHeading: 'Verhaltensänderung, Glaubenssätze, Konflikte',
+        heading: 'Neue Perspektiven',
+        subHeading: 'Verhalten, Glaubenssätze, Konflikte',
         description:
         `<p>
         Ärgert dich dein eigenes Verhalten? Fühlst du dich
@@ -40,22 +40,38 @@ export const myOffersShort: OfferShortDescription[] = [
         Lass uns in einer Coaching-Stunde deinen Ansichten auf
         den Grund gehen und dir neue Perspektiven zu Selbstenfaltung eröffnen.
         </p>`,
-        buttonText: 'Perspektiven wechseln',
+        buttonText: 'Perspektive wechseln',
         path: 'coaching',
+    },
+    {
+        heading: 'Aus der Ferne',
+        subHeading: 'Gebündelt, Fordernd, Überall',
+        description:
+        `<p>
+        Keine Zeit mich privat zu sehen, kein direkter Grund,
+        gecoacht zu werden oder einfach nur Lust zu lernen und erforschen?
+        In meinen Onlinekursen liefer ich dir Wissen und zugehörige Aufgaben und
+        Herausforderungen so gebalt wie Möglich.
+        </p>
+        <p>
+        Der Fokus liegt auch hier auf dem TUN!
+        Wie ich dich genau dazu bringe erfährst du dann.
+        </p>`,
+        buttonText: 'Kurs buchen',
+        path: 'courses',
     },
     {
         heading: 'Traum & Realtität',
         subHeading: '6 Leute, 1 Abend, 6 Macher ',
         description:
         `<p>
-        Ich veranstalte mit einer Gruppe von maximal 6 Personen
-        einen Visionsabend bei dir zuhause. Wir finden durch
-        intensiven austausch, Bilder und Erzählungen eine neue Richtung
-        für euer Leben. Was erfüllt euch? Welchen Wert könnt ihr anderen damit bringen?
-        Und was braucht ihr umbedingt für euer Glück?
+        Veranstalte mit 6 Personen einen Visionsabend bei dir zuhause. Wir finden durch
+        Bilder,Erzählungen und intensiven Austausch neue Richtungen
+        für euer Leben. Was erfüllt euch? Welchen Wert bringt ihr anderen damit?
+        Was braucht ihr unbedingt für euer Glück?
         </p>
         <p>
-        Wir beenden den Abend nicht bevor nicht jede(r) eine
+        Wir beenden den Abend erst wenn jede(r) eine
         KONKRETE Aufgabe oder Plan hat.
         </p>`,
         buttonText: 'Vision erforschen',
