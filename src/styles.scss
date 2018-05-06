@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700');
 @import 'variables';
 
-
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
+html {
+    font-size: $font-size;
+}
 
 h1, h2, h3, h4 {
     letter-spacing: 0.04em;
@@ -19,16 +21,72 @@ h1 {
     font-size: $font-size * 3;
 }
 
-
 p {
-    color: $color-darkgrey;
+    color: $darkgrey;
     line-height: 1.6em;
     letter-spacing: 0.02em;
-
 }
 
-
-html {
-    font-size: $font-size;
+.wrap {
+    flex-wrap: wrap;
 }
 
+input {
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    width: 23em;
+    padding: 1em 1em;
+    outline: none;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+
+    &:focus {
+        border-color: $black;
+
+    }
+    &.error {
+        border-color: $warn;
+    }
+}
+
+label {
+    display: block;
+    color: $darkgrey;
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.02em;
+}
+
+button {
+    width: auto;
+    padding: 0 5em;
+    font-weight: 200;
+    color: white;
+    height: 4.5em;
+    background-color: $blue;
+    border: 2px solid $blue;
+    border-radius: 100em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+        background-color: white;
+    }
+
+    transition: all 0.3s ease;
+}
+
+.error-message {
+    color: $warn;
+    padding-top: 0.2em;
+    font-size: 0.8em;
+    height: 1em;
+}

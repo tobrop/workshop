@@ -1,3 +1,37 @@
-<p>
-  coaching works!
-</p>
+<section fxLayout="column" fxLayoutGap="2em">
+  <h2>Gemeinsam neue Perspektiven entdecken</h2>
+  
+  <article fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="3em">
+    <div fxFlex="48%">Das ist mein Angebot </div>
+    <form fxFlex="48%" [formGroup]="reservationForm" (submit)="saveData()" 
+    fxLayout="column" fxLayoutGap="1.5em">
+      <div fxLayout="column" >
+        <label>Name</label>
+        <input type="text" formControlName="name" [ngClass]="{ 'error': checkForError(reservationForm.controls.name)}">
+        <span class="error-message" *ngIf="showErrors">{{reservationForm.controls.name.errors | json}}</span>
+      </div>
+      <div fxLayout="column" >
+        <label>Telefonnummer</label>
+        <input type="text" formControlName="phone" [ngClass]="{ 'error': checkForError(reservationForm.controls.phone)}">
+        <span  class="error-message" *ngIf="showErrors">{{reservationForm.controls.phone.errors | json}}</span>
+      </div>
+      <div fxLayout="column" >
+        <label>E-Mail</label>
+        <input type="email" formControlName="email" [ngClass]="{ 'error': checkForError(reservationForm.controls.email) }">
+        <span class="error-message" *ngIf="showErrors">{{reservationForm.controls.email.errors | json}}</span>
+      </div>
+      <button>Coaching vereinbaren</button>
+    </form>
+  </article>
+
+  <article fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="1em">
+    <h2>Was wir zusammen tun können</h2>
+    <div fxFlex fxLayout="row" class="wrap" fxLayoutAlign="center start">
+      <div fxFlex="33%" *ngFor="let proposition of whatWeCanDo" class="proposition">
+        <h3>{{proposition.heading}}</h3>
+        <p>{{proposition.description}}</p>
+      </div>
+    </div>
+  </article>
+</section>
+
